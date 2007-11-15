@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>MPFuel.ac</path>
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>MPPtrTip</object-name>
+  <object-name>MPPtr</object-name>
+  <property>engines/engine/mp-inhg</property>
+  <interpolation>
+   <entry><ind>10</ind><dep>  0</dep></entry>
+   <entry><ind>35</ind><dep>150</dep></entry>
+  </interpolation>
+  <min>0</min>
+  <max>150</max>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>  
+  </center>
+ </animation>         
+ 
+ <animation> 
+  <type>rotate</type>
+  <object-name>FFPtrTip</object-name>
+  <object-name>FFPtr</object-name>
+  <property>engines/engine/fuel-flow-gph</property>
+  <interpolation>
+   <entry><ind> 1.32</ind><dep>  0</dep></entry>
+   <entry><ind> 5.28</ind><dep> 11</dep></entry>
+   <entry><ind> 7.92</ind><dep> 22</dep></entry>
+   <entry><ind>10.56</ind><dep> 45</dep></entry>
+   <entry><ind>13.20</ind><dep> 70</dep></entry>
+   <entry><ind>15.85</ind><dep> 90</dep></entry>
+   <entry><ind>18.49</ind><dep>105</dep></entry>
+  </interpolation>
+  <axis> 
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>  
+  </center>
+ </animation>         
+
+</PropertyList>

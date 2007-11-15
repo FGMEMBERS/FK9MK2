@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D), MARQUE Sébastien, Maik Justus (FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/FK9MK2/fk9mk2-splash.rgb</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/FK9MK2/Sounds/fk9mk2-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/FK9MK2/Models/fk9mk2.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay> 
+
+    <help>
+      <title>U.L.M FK 9 Mark 2</title>
+      <line>______________________________________________</line>
+    </help>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/fk9mk2-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <fk9mk2>
+      <file>Aircraft/FK9MK2/Nasal/doors.nas</file>
+    </fk9mk2>
+  </nasal>
+  
+  <!-- Démarrer avec les freins parking
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls> -->
+
+</PropertyList>

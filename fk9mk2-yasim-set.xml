@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<PropertyList include="fk9mk2-base.xml">
+
+  <sim>
+
+    <description>FK 9 Mark 2 (YASim)</description>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">fk9mk2-yasim</aero>
+			<fk9mk2>
+				<state type="int">0</state>
+				<airspeed-kmh type="float">0.0</airspeed-kmh>
+				<engine-rpm type="float">0.0</engine-rpm>
+			</fk9mk2>
+    <weight n="0">
+            <name>Pilot</name>
+            <weight-lb>180</weight-lb>
+            <max-lb>240</max-lb>
+            <min-lb>140</min-lb>
+        </weight>
+
+        <weight n="1">
+            <name>Pax</name>
+            <weight-lb>0</weight-lb>
+            <max-lb>240</max-lb>
+            <min-lb>0</min-lb>
+        </weight>
+
+        <weight n="2">
+            <name>Baggage</name>
+            <weight-lb>0</weight-lb>
+            <max-lb>20</max-lb>
+            <min-lb>0</min-lb>
+        </weight>
+    <flaps>
+        <setting>0.00</setting> <!-- Cruise -->
+        <setting>0.50</setting> <!-- Half -->
+        <setting>1.0</setting> <!-- Full -->
+    </flaps>
+
+  </sim>
+	
+	<engines>
+		   <engine>
+					 <rpm type="float">0.0</rpm>
+		   </engine>
+	   </engines>
+
+	<nasal>
+		<fk9>
+			<file>Aircraft/FK9MK2/Nasal/fk9mk2.nas</file>
+		</fk9>
+	</nasal>
+ 
+</PropertyList>
