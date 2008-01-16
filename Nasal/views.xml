@@ -82,23 +82,4 @@
     </config>
   </view>
 
-  <viewer>
-    <eye>
-      <latitude-deg type="double">0</latitude-deg>
-      <longitude-deg type="double">0</longitude-deg>
-      <altitude-ft type="double">0</altitude-ft>
-      <heading-deg type="double">0</heading-deg>
-      <pitch-deg type="double">0</pitch-deg>
-      <roll-deg type="double">0</roll-deg>
-    </eye>
-    <target>
-      <latitude-deg type="double">0</latitude-deg>
-      <longitude-deg type="double">0</longitude-deg>
-      <altitude-ft type="double">0</altitude-ft>
-      <heading-deg type="double">0</heading-deg>
-      <pitch-deg type="double">0</pitch-deg>
-      <roll-deg type="double">0</roll-deg>
-    </target>
-  </viewer>
-
 </PropertyList>
