@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList include="fk9mk2-base.xml">
+
+  <sim>
+
+    <description>FK 9 Mark 2 (YASim)</description>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">fk9mk2-yasim</aero>
+
+  </sim>
+
+</PropertyList>
+

@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Altimeter.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>inhg</object-name>
+    <object-name>Ptr10000c</object-name>
+    <object-name>Ptr1000c</object-name>
+    <object-name>Ptr100c</object-name>
+    <emission>
+     <red>   1.0 </red>
+     <green> 0.2 </green>
+     <blue>  0.0 </blue>
+     <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <emission>
+      <red>   0.45</red>
+      <green> 0.09</green>
+      <blue>  0.00001</blue>
+      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ptr100c</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.36</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ptr1000c</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.036</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ptr10000c</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.0036</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>AdjDn</object-name>
+    <visible>false</visible>
+    <action>
+      <name>decrease calibrate fine</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>-0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>decrease calibrate coarse</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>-0.1</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>AdjUp</object-name>
+    <visible>false</visible>
+    <action>
+      <name>increase calibrate fine</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>increase calibrate coarse</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>0.1</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+
+

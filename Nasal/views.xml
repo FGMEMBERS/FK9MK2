@@ -40,9 +40,10 @@
     <internal archive="y">true</internal>
     <config>
        <x-offset-m archive="y"> -0.206 </x-offset-m>	<!-- Right -->
-       <y-offset-m archive="y">  0.315 </y-offset-m>	<!-- Up    -->
-       <z-offset-m archive="y"> -1.056 </z-offset-m>	<!-- Back  -->
-       <pitch-offset-deg>-15</pitch-offset-deg>
+       <y-offset-m archive="y">  0.314 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y"> -1.086 </z-offset-m>	<!-- Back  -->
+       <pitch-offset-deg>-20</pitch-offset-deg>
+      <default-field-of-view-deg>60</default-field-of-view-deg>
     </config>
   </view>
 

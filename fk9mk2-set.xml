@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="fk9mk2-jsbsim-cnf.xml"> -->
+<PropertyList include="fk9mk2-yasim-cnf.xml">
+
+  <sim>
+    <description>FK 9 Mark 2</description>
+    <author>Emmanuel BARANGER (3D/FDM), Maik Justus (FDM)</author>
+  </sim>
+
+</PropertyList>
+

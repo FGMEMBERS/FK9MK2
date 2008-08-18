@@ -4,12 +4,18 @@
 
   <path>fk9mk2.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/FK9MK2/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>interieur</object-name>
-    <object-name>pilote</object-name>
-    <object-name>siege</object-name>
     <object-name>roueG</object-name>
     <object-name>roueD</object-name>
     <object-name>roueA</object-name>
@@ -24,7 +30,6 @@
     <object-name>deriveH</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-    <object-name>direction2</object-name>
     <object-name>barre</object-name>
     <object-name>axe</object-name>
     <object-name>cacheG</object-name>
@@ -47,20 +52,88 @@
     <object-name>propblur</object-name>
   </animation>
 
-  <!-- Planches de bord -->
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>bol</object-name>
+    <object-name>helice</object-name>
+    <object-name>deriveV</object-name>
+    <object-name>deriveH</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>barre</object-name>
+    <object-name>axe</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>air</object-name>
+    <object-name>priseavant</object-name>
+    <object-name>prisearriere</object-name>
+    <object-name>echappe</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Interieur -->
   <model>
-    <path>Aircraft/FK9MK2/Models/Panel/panel.xml</path>
+    <path>Aircraft/FK9MK2/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> -1.151 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.157 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
     </offsets>
   </model>
 
   <!-- L'hélice --> 
+  <animation>
+    <name>HeliceComplete</name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>helice</object-name>
+    <object-name>bol</object-name>
+  </animation>
+
   <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
@@ -103,10 +176,7 @@
 
   <animation>
     <type>spin</type>
-    <object-name>helice</object-name>
-    <object-name>bol</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
+    <object-name>HeliceComplete</object-name>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -143,7 +213,6 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <object-name>direction2</object-name>
     <property>controls/flight/rudder</property>
     <factor>20</factor>
     <axis>
