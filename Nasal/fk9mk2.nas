@@ -102,23 +102,23 @@ var crashed = 0;
 setlistener("/sim/signals/fdm-initialized", func {
 
 
-	setlistener("/sim/signals/reinit", func {
-		cmdarg().getBoolValue() and return;
+	setlistener("/sim/signals/reinit", func(n) {
+		n.getBoolValue() and return;
 		cprint("32;1", "reinit");
 		crashed = 0;
 	});
 
-	setlistener("sim/crashed", func {
-		cprint("31;1", "crashed ", cmdarg().getValue());
-		if (cmdarg().getBoolValue()) {
+	setlistener("sim/crashed", func(n) {
+		cprint("31;1", "crashed ", n.getValue());
+		if (n.getBoolValue()) {
 			crash(crashed = 1);
 		}
 	});
 
-	setlistener("/sim/freeze/replay-state", func {
-		cprint("33;1", cmdarg().getValue() ? "replay" : "pause");
+	setlistener("/sim/freeze/replay-state", func(n) {
+		cprint("33;1", n.getValue() ? "replay" : "pause");
 		if (crashed) {
-			crash(!cmdarg().getBoolValue())
+			crash(!n.getBoolValue())
 		}
 	});
 
