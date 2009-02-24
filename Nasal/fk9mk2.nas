@@ -81,7 +81,14 @@ var crash = func {
 
 var elapsedN = props.globals.getNode("/sim/time/elapsed-sec", 1);
 
+var out_low_rpm_engine_volume = props.globals.getNode("sim/fk9mk2/engine-volume-low-rpm", 1);
+var out_high_rpm_engine_volume = props.globals.getNode("sim/fk9mk2/engine-volume-high-rpm", 1);
 
+var update_sound = func {
+    var rpm = engine_rpm.getValue();
+    out_low_rpm_engine_volume.setValue(1-clamp((rpm - 1650)/250));
+    out_high_rpm_engine_volume.setValue(clamp((rpm - 1550)/250));
+}
 
 
 # main() ============================================================
@@ -91,6 +98,7 @@ var main_loop = func {
 
 	var dt = delta_time.getValue();
 	update_instruments(dt);
+	update_sound();
 	settimer(main_loop, 0);
 }
 

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -50,6 +50,13 @@
     <object-name>vitres</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
   </animation>
 
   <animation>

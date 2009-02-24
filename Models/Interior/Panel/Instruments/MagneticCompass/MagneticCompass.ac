@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite.001" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "BlackPaint" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "RedPaint" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.610798 0.610798 0.610798 shi 32 trans 0
 MATERIAL "transparent.001" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.5
@@ -9059,23 +9059,17 @@ name "Marker"
 data 5
 Plane
 crease 30.000000
-numvert 3
+numvert 4
+0 0.054 0
 0 0.054 0
 0 0.026 0
 0 0.054 0
-numsurf 1
-SURF 0x02
-mat 3
-refs 2
-1 0 0
-2 0 0
+numsurf 0
 kids 0
 OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "glass.png"
-texrep 1 1
 crease 30.000000
 numvert 4
 0.001 0.053 -0.02
@@ -9086,8 +9080,8 @@ numsurf 1
 SURF 0x10
 mat 4
 refs 4
-0 0.0 1.0
-3 1.0 1.0
-2 1.0 0.0
-1 0.0 0.0
+0 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+1 1.0 0.0
 kids 0

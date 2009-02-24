@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -46,6 +46,8 @@
       <state type="int">0</state>
       <airspeed-kmh type="float">0.0</airspeed-kmh>
       <engine-rpm type="float">0.0</engine-rpm>
+      <engine-volume-low-rpm type="float">0.0</engine-volume-low-rpm>
+      <engine-volume-high-rpm type="float">0.0</engine-volume-high-rpm>
     </fk9mk2>
 
     <weight n="0">
@@ -70,9 +72,9 @@
     </weight>
 
     <flaps>
-      <setting> 0.00 </setting> <!-- Cruise -->
-      <setting> 0.50 </setting> <!--   Half -->
-      <setting> 1.00 </setting> <!--   Full -->
+        <setting>0.00</setting> <!-- Cruise -->
+        <setting>0.50</setting> <!-- Half -->
+        <setting>1.0</setting> <!-- Full -->
     </flaps>
 
     <menubar include="Dialogs/fk9mk2-menu.xml"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -18,7 +18,7 @@
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
-          <script>s55.immat_dialog.toggle()</script>
+          <script>fk9mk2.immat_dialog.toggle()</script>
         </binding>
       </item>
 -->
