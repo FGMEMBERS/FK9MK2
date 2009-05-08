@@ -5,9 +5,9 @@
   <path>VSI.ac</path>
 
   <animation>
-    <object-name>Bezel</object-name>
-    <object-name>Face</object-name>
-    <object-name>PointerTip</object-name>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -26,31 +26,31 @@
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>PointerTip</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
     <emission>
-      <red>   0.028 </red>
-      <green> 0.014 </green>
-      <blue>  0.007 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation> 
     <type>rotate</type>
-    <object-name>PointerTip</object-name>
-    <!--property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property-->
-    <property>/velocities/speed-down-fps</property>
+    <object-name>needle</object-name>
+    <property>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <interpolation>
-      <entry><ind>  33.3 </ind><dep> -172 </dep></entry>
-      <entry><ind>  25.0 </ind><dep> -130 </dep></entry>
-      <entry><ind>  16.6 </ind><dep>  -79 </dep></entry>
-      <entry><ind>   8.3 </ind><dep>  -33 </dep></entry>
-      <entry><ind>   0.0 </ind><dep>    0 </dep></entry>
-      <entry><ind>  -8.3 </ind><dep>   33 </dep></entry>
-      <entry><ind> -16.6 </ind><dep>   79 </dep></entry>
-      <entry><ind> -25.0 </ind><dep>  130 </dep></entry>
-      <entry><ind> -33.3 </ind><dep>  172 </dep></entry>
+      <entry><ind> -2000 </ind><dep> -172 </dep></entry>
+      <entry><ind> -1500 </ind><dep> -130 </dep></entry>
+      <entry><ind> -1000 </ind><dep>  -79 </dep></entry>
+      <entry><ind>  -500 </ind><dep>  -33 </dep></entry>
+      <entry><ind>     0 </ind><dep>    0 </dep></entry>
+      <entry><ind>   500 </ind><dep>   33 </dep></entry>
+      <entry><ind>  1000 </ind><dep>   79 </dep></entry>
+      <entry><ind>  1500 </ind><dep>  130 </dep></entry>
+      <entry><ind>  2000 </ind><dep>  172 </dep></entry>
     </interpolation>
     <axis> 
       <x> -1 </x>

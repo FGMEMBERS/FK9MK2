@@ -56,6 +56,15 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/electric/electric.xml</path>
+    <offsets>
+      <x-m> -0.311 </x-m>
+      <y-m> -0.304 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
 <!--
   <model>
     <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>

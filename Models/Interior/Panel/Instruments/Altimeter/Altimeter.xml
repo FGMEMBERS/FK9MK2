@@ -5,15 +5,14 @@
   <path>Altimeter.ac</path>
 
   <animation>
-    <object-name>Case</object-name>
-    <object-name>Face</object-name>
-    <object-name>inhg</object-name>
-    <object-name>Ptr10000c</object-name>
-    <object-name>Ptr1000c</object-name>
-    <object-name>Ptr100c</object-name>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>pressureset</object-name>
+    <object-name>ptr10000t</object-name>
+    <object-name>ptr1000t</object-name>
+    <object-name>ptr100t</object-name>
     <object-name>AdjDn</object-name>
     <object-name>AdjUp</object-name>
-    <object-name>PressureSet</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -32,22 +31,22 @@
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>inhg</object-name>
-    <object-name>Ptr10000c</object-name>
-    <object-name>Ptr1000c</object-name>
-    <object-name>Ptr100c</object-name>
+    <object-name>face</object-name>
+    <object-name>ptr10000t</object-name>
+    <object-name>ptr1000t</object-name>
+    <object-name>ptr100t</object-name>
     <emission>
-      <red>   0.028 </red>
-      <green> 0.014 </green>
-      <blue>  0.007 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>Ptr100c</object-name>
+    <object-name>ptr100t</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
     <axis>
@@ -59,7 +58,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Ptr1000c</object-name>
+    <object-name>ptr1000t</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.036</factor>
     <axis>
@@ -71,16 +70,17 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Ptr10000c</object-name>
+    <object-name>ptr10000t</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0036</factor>
     <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
     </axis>
   </animation>
 
+  <!--             Altimeter              -->  
   <animation>
     <type>pick</type>
     <object-name>AdjDn</object-name>

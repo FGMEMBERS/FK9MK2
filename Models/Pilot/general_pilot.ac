@@ -9,7 +9,7 @@ data 14
 avantbrasD.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 35
 0.023364 0.094548 -0.091444
 0.130504 0.108709 -0.224577
@@ -260,7 +260,7 @@ data 14
 avantbrasG.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 182
 -0.025357 0.022629 0.208135
 -0.02622 0.052319 0.179621
@@ -1765,7 +1765,7 @@ data 9
 brasD.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 22
 0.422978 0.275532 -0.235206
 0.193169 0.084038 -0.245915
@@ -1947,7 +1947,7 @@ data 9
 brasG.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 32
 0.460881 0.325793 0.210922
 0.455837 0.362331 0.18177
@@ -2189,7 +2189,7 @@ data 9
 corps.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 398
 0.290892 0.360919 -0.013771
 0.248768 0.275668 -0.013771
@@ -4401,7 +4401,7 @@ data 11
 cuisseD.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 30
 -0.143628 0.008672 -0.036847
 -0.051486 0.015992 -0.041023
@@ -4729,7 +4729,7 @@ data 11
 cuisseG.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 30
 -0.096344 -0.034595 0.18149
 0.188459 0.027891 0.187752
@@ -5045,7 +5045,7 @@ data 10
 jambeD.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 112
 -0.134988 -0.060126 -0.094599
 -0.105572 -0.044342 -0.089996
@@ -5878,7 +5878,7 @@ data 10
 jambeG.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 112
 -0.121992 -0.085263 0.129441
 -0.097458 -0.062862 0.139977
@@ -6711,7 +6711,7 @@ data 10
 manche.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 140
 0.027998 0.129471 -0.012268
 0.015013 0.136632 -0.013792
@@ -7856,7 +7856,7 @@ data 9
 piedD.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 51
 -0.631625 0.004299 -0.090306
 -0.626116 -0.008749 -0.111888
@@ -8203,7 +8203,7 @@ data 9
 piedG.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 51
 -0.632975 -0.005699 0.104234
 -0.628414 -0.017908 0.116096
@@ -8550,7 +8550,7 @@ data 8
 tete.001
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 782
 0.360328 0.505111 0.064829
 0.360872 0.506749 0.067629
@@ -14780,7 +14780,7 @@ data 7
 visiere
 texture "general_pilot.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 40
 0.297513 0.574276 -0.090971
 0.265553 0.581699 -0.082971

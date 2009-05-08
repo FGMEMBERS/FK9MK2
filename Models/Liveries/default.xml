@@ -3,8 +3,8 @@
 <PropertyList>
   <sim>
       <model>
-        <name type="string">Default</name>
         <livery>
+          <name type="string">Default</name>
           <texture>texture.png</texture>
 <!--
         <diffuse>

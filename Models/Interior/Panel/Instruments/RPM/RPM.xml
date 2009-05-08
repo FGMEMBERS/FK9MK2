@@ -5,9 +5,9 @@
   <path>RPM.ac</path>
 
   <animation>
-    <object-name>Bezel</object-name>
-    <object-name>Face</object-name>
-    <object-name>PointerTip</object-name>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -26,23 +26,24 @@
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>PointerTip</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
     <emission>
-      <red>   0.028 </red>
-      <green> 0.014 </green>
-      <blue>  0.007 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>PointerTip</object-name>
+    <object-name>needle</object-name>
     <property>engines/engine[0]/rpm</property>
     <interpolation>
-     <entry><ind>    0 </ind><dep>  15 </dep></entry>
-     <entry><ind> 6000 </ind><dep> 257 </dep></entry>
+      <entry><ind>    0 </ind><dep>  15 </dep></entry>
+      <entry><ind> 6000 </ind><dep> 257 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
