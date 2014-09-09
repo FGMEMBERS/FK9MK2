@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
+    <offsets>
+      <x-m> -0.314 </x-m>
+      <y-m> -0.176 </y-m>
+      <z-m>  0.225 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <offsets>
+      <x-m> -0.314 </x-m>
+      <y-m> -0.068 </y-m>
+      <z-m>  0.225 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
+    <offsets>
+      <x-m> -0.314 </x-m>
+      <y-m> -0.176 </y-m>
+      <z-m>  0.133 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <offsets>
+      <x-m> -0.314 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.318 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
+    <offsets>
+      <x-m> -0.314 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m>  0.225 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/electric/electric.xml</path>
+    <offsets>
+      <x-m> -0.311 </x-m>
+      <y-m> -0.304 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
+<!--
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.198 </y-m>
+      <z-m>  0.054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.099 </y-m>
+      <z-m>  0.054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m>  0.045 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m>  0.116 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m>  0.187 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/FK9MK2/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m>  0.256 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+
+-->
+
+</PropertyList>
