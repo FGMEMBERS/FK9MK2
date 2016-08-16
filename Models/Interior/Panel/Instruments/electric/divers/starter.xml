@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>starter.ac</path>
+
+  <animation>
+    <object-name>Base</object-name>
+    <object-name>Switch</object-name>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Base</object-name>
+    <object-name>Switch</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>translate</type>
+    <object-name>start</object-name>
+    <property>/controls/switches/starter</property>
+    <factor> 0.002 </factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>                                                              
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>start</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/switches/starter</property>
+        <value type="int">1</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>controls.startEngine()</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/switches/starter</property>
+          <value type="int">0</value>
+        </binding>
+        <binding>
+          <command>nasal</command>
+          <script>props.setAll("/controls/engines/engine", "starter", 0)</script>
+        </binding>     
+      </mod-up>                     
+    </action>
+  </animation>
+
+</PropertyList>

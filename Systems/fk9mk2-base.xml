@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="views.xml">
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/FK9MK2/fk9mk2-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/FK9MK2/Sounds/fk9mk2-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/FK9MK2/Models/fk9mk2.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
+        <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
+        <int   n="2"  type="int">  0 </int>                                         <!-- 2 immat -->
+        <int   n="3"  type="int">  0 </int>                                         <!-- 3 immat -->
+        <int   n="4"  type="int">  0 </int>                                         <!-- 4 immat -->
+        <int   n="5"  type="int">  0 </int>                                         <!-- 5 immat -->
+        <int   n="6"  alias="/sim/model/hide-typea" type="bool">false</int>         <!-- 6 type of roof -->
+        <int   n="7"  type="int">  0 </int>                                         <!-- 7  -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/gear/gear[0]/wow/"/>
+        <float n="7"  alias="/gear/gear[1]/wow/"/>
+        <float n="8"  alias="/gear/gear[2]/wow/"/>
+        <float n="9"  alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>140</min-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Pax</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Baggage</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>20</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <fk9mk2 include="fk9mk2.xml"/>
+    
+    <help include="help.xml"/>
+   
+    <flaps include="flaps.xml"/>
+
+    <menubar include="../Dialogs/fk9mk2-menu.xml"/>
+
+  </sim>
+
+  <input include="fk9mk2-keyboard.xml"/>
+
+  <engines include="engines.xml"/>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/FK9MK2/Nasal/doors.nas</file>
+    </doors>
+    <fk9mk2>
+      <file>Aircraft/FK9MK2/Nasal/fk9mk2.nas</file>
+      <file>Aircraft/FK9MK2/Nasal/liveries.nas</file>
+    </fk9mk2>
+  </nasal>
+
+</PropertyList>

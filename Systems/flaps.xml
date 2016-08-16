@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <setting> 0.0 </setting> <!-- Cruise -->
+  <setting> 0.5 </setting> <!-- Half -->
+  <setting> 1.0 </setting> <!-- Full -->
+  
+</PropertyList>
