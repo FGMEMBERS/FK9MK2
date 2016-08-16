@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,24 +7,19 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>planchet</object-name>
     <object-name>siege</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>shader.png</texture>
-    <object-name>intvitres</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/FK9MK2/Models/Pilot/pilot.xml</path>
@@ -42,11 +37,7 @@
       <x-m> -1.151 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.157 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
 </PropertyList>
-
