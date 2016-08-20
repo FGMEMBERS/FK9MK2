@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -13,29 +13,27 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/FK9MK2/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>Face</object-name>
     <object-name>PtrL</object-name>
     <object-name>PtrR</object-name>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -49,16 +47,16 @@
       <entry><ind> 212 </ind><dep> 58 </dep></entry>
       <entry><ind> 266 </ind><dep> 89 </dep></entry>
     </interpolation>
-    <axis> 
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
     <center>
       <x-m>  0.00 </x-m>
       <y-m> -0.02 </y-m>
       <z-m>  0.00 </z-m>  
     </center>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>         
  
   <animation> 
@@ -71,16 +69,16 @@
       <entry><ind>  90 </ind><dep> 70.0 </dep></entry>
       <entry><ind> 120 </ind><dep> 84.5 </dep></entry>
     </interpolation>
-    <axis> 
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
     <center>
       <x-m> 0.00 </x-m>
       <y-m> 0.02 </y-m>
       <z-m> 0.00 </z-m>  
     </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
   </animation>         
  
 </PropertyList>

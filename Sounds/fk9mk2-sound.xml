@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
- 
-<PropertyList>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
+<PropertyList>
+  
   <fx>
- 
+    
     <crank>
       <name>engstart</name>
       <path>Aircraft/FK9MK2/Sounds/fk9_eng_start_ext1_part1.wav</path>
@@ -19,7 +19,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank>
       <name>engstartext</name>
       <path>Aircraft/FK9MK2/Sounds/fk9_eng_start_int1_part1.wav</path>
@@ -37,7 +37,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank>
       <name>crank</name>
       <mode>looped</mode>
@@ -57,7 +57,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank>
       <name>crankext</name>
       <mode>looped</mode>
@@ -79,7 +79,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank>
       <name>cough</name>
       <path>Sounds/coughing.wav</path>
@@ -90,7 +90,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <stopext>
       <name>stopext</name>
       <path>Aircraft/FK9MK2/Sounds/fk9_eng_stop_ext1.wav</path>
@@ -107,7 +107,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </stopext>
-
+    
     <stop>
       <name>stop</name>
       <path>Aircraft/FK9MK2/Sounds/fk9_eng_stop_int1.wav</path>
@@ -124,7 +124,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </stop>
-
+    
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -153,7 +153,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-
+    
     <engine>
       <name>engineextslow</name>
       <mode>looped</mode>
@@ -182,7 +182,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-
+    
     <propellerhigh>
       <name>propellerhigh</name>
       <mode>looped</mode>
@@ -199,17 +199,6 @@
         <min>0.0</min>
         <max>1.0</max>
       </volume>
-      <!--
-      <volume>
-        <property>/orientation/alpha-deg</property>
-        <type>log</type>
-        <min>0.2</min>
-        <max>1.0</max>
-      </volume>
-      <volume>
-        <property>/sim/current-view/internal</property>
-        <factor>0.5</factor>
-      </volume>-->
       <pitch>
         <property>/engines/engine/rpm</property>
         <factor>0.000226</factor>
@@ -220,7 +209,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </propellerhigh>
-
+    
     <propellerlow>
       <name>propellerlow</name>
       <mode>looped</mode>
@@ -237,18 +226,6 @@
         <min>0.0</min>
         <max>1.0</max>
       </volume>
-      <!--
-      <volume>
-        <property>/orientation/alpha-deg</property>
-        <type>log</type>
-        <min>0.2</min>
-        <max>1.0</max>
-      </volume>
-      <volume>
-        <property>/sim/current-view/internal</property>
-        <factor>0.5</factor>
-      </volume>
-      -->
       <pitch>
         <property>/engines/engine/rpm</property>
         <factor>0.0007462</factor>
@@ -259,7 +236,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </propellerlow>
-
+    
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
@@ -270,11 +247,9 @@
           <property>/gear/gear[1]/wow</property>
           <property>/gear/gear[2]/wow</property>
         </or>
-        <!-- <property>/sim/current-view/internal</property> -->
       </condition>
       <volume>
         <property>/velocities/groundspeed-kt</property>
-        <!--type>log</type-->
         <factor>0.025</factor>
         <offset> -0.01</offset>
         <max>1.01</max>
@@ -288,7 +263,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
-
+    
     <squeal>
       <name>squeal</name>
       <path>Aircraft/FK9MK2/Sounds/fk9_wow.wav</path>
@@ -322,7 +297,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </squeal>
- 
+    
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -334,7 +309,7 @@
       <reference-dist>10.0</reference-dist>
       <max-dist>20.0</max-dist>
     </flap>
-
+    
     <wind>
       <name>wind</name>
       <mode>looped</mode>
@@ -359,7 +334,7 @@
         <offset>1.25</offset>
       </pitch>
     </wind>
-
+    
     <!--                  Toggle Switches                  -->     
     <click> 
       <name>Battery on</name>
@@ -371,7 +346,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Battery off</name>
       <path>Sounds/click.wav</path>
@@ -384,7 +359,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Fuel Pump on</name>
       <path>Sounds/click.wav</path>
@@ -395,7 +370,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Fuel Pump off</name>
       <path>Sounds/click.wav</path>
@@ -408,7 +383,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
- 
+    
     <click>
       <name>Landing Light On</name>
       <path>Sounds/click.wav</path>
@@ -419,7 +394,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-      
+    
     <click>
       <name>Landing Light Off</name>
       <path>Sounds/click.wav</path>
@@ -432,7 +407,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Magnetos-off</name>
       <path>Sounds/click.wav</path>
@@ -445,7 +420,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Strobe Lights White</name>
       <path>Sounds/click.wav</path>
@@ -459,7 +434,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Strobe Lights Off</name>
       <path>Sounds/click.wav</path>
@@ -472,7 +447,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Avionics Master On</name>
       <path>Sounds/click.wav</path>
@@ -483,7 +458,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
- 
+    
     <click> 
       <name>Avionics Master Off</name>
       <path>Sounds/click.wav</path>
@@ -496,7 +471,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
   </fx>
-
+  
 </PropertyList>

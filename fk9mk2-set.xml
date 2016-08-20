@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="fk9mk2-jsbsim-cnf.xml"> -->
-<PropertyList include="fk9mk2-yasim-cnf.xml">
+<PropertyList include="Systems/fk9mk2-base.xml">
 
   <sim>
-    <description>FK 9 Mark 2</description>
+    
+    <description>FK 9 Mark 2 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Maik Justus (FDM)</author>
+    <status>Alpha</status>
+    
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">Systems/fk9mk2-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
   </sim>
 
 </PropertyList>
-

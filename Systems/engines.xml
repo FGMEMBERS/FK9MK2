@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <engine>
+    <on type="bool">false</on>
+    <rpm type="float"> 0 </rpm>
+  </engine>
+  
+</PropertyList>

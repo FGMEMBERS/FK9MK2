@@ -1,85 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>FuelGauge.ac</path>
-
+  
   <animation>
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>ptrL</object-name>   
     <object-name>ptrR</object-name>
-
+    
     <object-name>vitre</object-name>
   </animation>
-
-  <animation>
-    <type>noshadow</type>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/FK9MK2/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>ptrL</object-name>   
     <object-name>ptrR</object-name>
     <emission>
-      <red>   0.9 </red>
-      <green> 0.5 </green>
-      <blue>  0.2 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
-
+  
   <animation> 
     <type>rotate</type>
     <object-name>ptrL</object-name>
-    <property>consumables/fuel/tank[0]/level-lbs</property>
+    <property>consumables/fuel/tank[0]/level-norm</property>
     <interpolation>
-     <entry><ind>  0.000 </ind><dep>  0.0 </dep></entry>
-     <entry><ind> 31.747 </ind><dep> 33.0 </dep></entry>
-     <entry><ind> 63.493 </ind><dep> 59.5 </dep></entry>
-     <entry><ind> 95.240 </ind><dep> 90.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 90 </dep></entry>
     </interpolation>
-    <axis> 
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
     <center>
       <x-m>  0.00 </x-m>
       <y-m> -0.02 </y-m>
       <z-m>  0.00 </z-m>  
     </center>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>         
- 
+  
   <animation> 
     <type>rotate</type>
     <object-name>ptrR</object-name>
-    <property>consumables/fuel/tank[1]/level-lbs</property>
+    <property>consumables/fuel/tank[1]/level-norm</property>
     <interpolation>
-     <entry><ind>  0.000 </ind><dep>  0.0 </dep></entry>
-     <entry><ind> 31.747 </ind><dep> 33.0 </dep></entry>
-     <entry><ind> 63.493 </ind><dep> 59.5 </dep></entry>
-     <entry><ind> 95.240 </ind><dep> 90.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 90 </dep></entry>
     </interpolation>
-    <axis> 
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
     <center>
       <x-m> 0.00 </x-m>
       <y-m> 0.02 </y-m>
       <z-m> 0.00 </z-m>  
     </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
   </animation>         
- 
+  
 </PropertyList>

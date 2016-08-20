@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>U.L.M FK 9 Mark 2</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close door</desc>
+  </key>
+  
+</PropertyList>

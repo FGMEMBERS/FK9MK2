@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <state type="int"> 0 </state>
+  <airspeed-kmh type="float"> 0 </airspeed-kmh>
+  <engine-rpm type="float"> 0 </engine-rpm>
+  <engine-volume-low-rpm type="float"> 0 </engine-volume-low-rpm>
+  <engine-volume-high-rpm type="float"> 0 </engine-volume-high-rpm>
+  
+</PropertyList>
